@@ -1,7 +1,7 @@
 # Image-Weather-Effects
 This project adds weather change effects to a image
 
-Following modules need to be installed in the editor 
+Following modules need to be installed 
 
 pip install requests
 
