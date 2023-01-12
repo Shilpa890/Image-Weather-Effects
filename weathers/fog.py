@@ -7,7 +7,10 @@ import matplotlib.pyplot as plt
 def add_blur(image, x, y, hw):
     image[y:y + hw, x:x + hw, 1] = image[y:y + hw, x:x + hw, 1] + 1
     image[:, :, 1][image[:, :, 1] > 255] = 255
-    image[y:y + hw, x:x + hw, 1] = cv2.blur(image[y:y + hw, x:x + hw, 1], (4, 4))
+    try:
+        image[y:y + hw, x:x + hw, 1] = cv2.blur(image[y:y + hw, x:x + hw, 1], (4, 4))
+    except Exception:
+        pass
     return image
 
 
