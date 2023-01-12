@@ -8,3 +8,9 @@ pip install requests
 pip install pandas
 
 pip install BeautifulSoup
+
+pip install imageio
+
+pip install opencv-python
+
+pip install matplotlib
